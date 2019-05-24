@@ -12,7 +12,7 @@ class Usuarios {
 
     getPersona(id) {
         let persona = this.personas.filter( persona => {
-            return persona.id == id
+            return persona.id === id
         })[0]
         return persona
     }
@@ -38,5 +38,5 @@ class Usuarios {
 }
 
 module.exports = {
-
+    Usuarios
 }
