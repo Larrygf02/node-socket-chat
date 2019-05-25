@@ -39,7 +39,10 @@ socket.on('crearMensaje', function(mensaje) {
 });
 
 socket.on('listaPersona', function(personas) {
-
     console.log( personas);
-
 });
+
+//Mensajes privados
+socket.on('mensajePrivado', function(mensaje) {
+    console.log('Mensaje privado', mensaje);
+})
